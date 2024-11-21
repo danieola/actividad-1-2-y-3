@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegacion</title>
+    <style>
+        
+        .menu {
+            background-color: #bbecf8;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        .menu li:hover {
+            background-color: #3f8506;
+        }
+
+       
+        .menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f50202;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .menu li:hover ul {
+            display: block;
+        }
+
+        .menu li ul li {
+            width: 100%;
+        }
+
+        .menu li ul li a {
+            padding: 12px;
+            white-space: nowrap;
+        }
+
+       
+        .menu a:hover {
+            background-color: #c80606;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a>
+                
+                <ul>
+                    <li><a href="diseno.html">Diseño Web</a></li>
+                    <li><a href="desarrollo.html">Desarrollo Web</a></li>
+                    <li><a href="consultoria.html">Consultoría</a></li>
+                </ul>
+            </li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
